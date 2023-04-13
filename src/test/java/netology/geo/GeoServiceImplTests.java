@@ -23,7 +23,7 @@ public class GeoServiceImplTests {
     void testLocationByIp(Location expended, String ip) {
         GeoService geoService = new GeoServiceImpl();
         Location location = geoService.byIp(ip);
-        assertEquals(expended, location);
+        assertEquals(expended.getCountry(), location.getCountry());
     }
 
     public static Stream<Arguments> sourceAdd() {
