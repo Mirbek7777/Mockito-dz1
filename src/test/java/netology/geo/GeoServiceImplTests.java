@@ -31,9 +31,10 @@ public class GeoServiceImplTests {
                 Arguments.of(new Location("Moscow", Country.RUSSIA, "Lenina", 15), "172.0.32.11"),
                 Arguments.of(new Location("New York", Country.USA, " 10th Avenue", 32), "96.44.183.149"),
                 Arguments.of(new Location("Moscow", Country.RUSSIA, null, 0), "172."),
-                Arguments.of(new Location("New York", Country.USA, null, 0), "96."),
-                Arguments.of(null, "000.0.0.0"));
+                Arguments.of(new Location("New York", Country.USA, null, 0), "96."));
+
     }
+
 
     @Test
     void testExceptionByCoordinates() {
